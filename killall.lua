@@ -57,7 +57,7 @@ local function checkToolExists(toolName)
 
         if not toolInBackpack and not toolInCharacter then
             toolMissingTime = toolMissingTime + RunService.Heartbeat:Wait()
-            if toolMissingTime >= 5 then
+            if toolMissingTime >= 3.5 then
                 local humanoid = character:FindFirstChild("Humanoid")
                 if humanoid then
                     humanoid.Health = 0
