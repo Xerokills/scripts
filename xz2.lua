@@ -1,16 +1,16 @@
 getgenv().Circle = {
     ["Size"] = 6,
-    ["Enabled"] = true,
+    ["Enabledd"] = true,
     ["Random FTI"] = false,
     ["Whitelisted Limbs"] = {"Left Arm","Right Arm","Left Leg","Right Leg","Head","Torso","HumanoidRootPart"}
 }
 
 getgenv().Configuration = {
     ["Active"] = true,
-    ["Increase Size"] = 4,
-    ["Decrease Size"] = 4,
+    ["Increase Size"] = 1,
+    ["Decrease Size"] = 1,
     ["Notifications"] = true,
-    ["Auto Clicker"] = true,
+    ["Auto Clicker"] = false,
     ["Transparency Check"] = false,
     ["Team Check"] = false,
     ["Fake Handle FTI"] = false -- if true, will only trigger if a fake handle is present (use for advanced antis)
