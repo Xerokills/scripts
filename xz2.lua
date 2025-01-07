@@ -39,9 +39,9 @@ local Mouse = LocalPlayer:GetMouse()
 Mouse.KeyDown:Connect(function(key)
     if key == string.lower(getgenv().Keybinds["Toggle Reach"]) then
         if getgenv().Configuration["Active"] == false then return end
-        getgenv().Circle["Enabled"] = not getgenv().Circle["Enabled"]
+        getgenv().Circle["Enabledd"] = not getgenv().Circle["Enabledd"]
         if getgenv().Configuration["Notifications"] == true then
-            SendNotification("Xen-Zone","Reach = "..tostring(getgenv().Circle["Enabled"]))
+            SendNotification("Xen-Zone","Reach = "..tostring(getgenv().Circle["Enabledd"]))
         end
     elseif key == string.lower(getgenv().Keybinds["Toggle AC"]) then
         if getgenv().Configuration["Active"] == false then return end
@@ -181,7 +181,7 @@ end
 
 game:GetService("RunService").RenderStepped:Connect(function()
     if getgenv().Configuration["Active"] == false then return end
-    if getgenv().Circle["Enabled"] == false then return end
+    if getgenv().Circle["Enabledd"] == false then return end
     local Tool = LocalPlayer.Character and LocalPlayer.Character:FindFirstChildOfClass("Tool")
     if Tool then
         if getgenv().Configuration["Auto Clicker"] and LocalPlayer.Character.Humanoid.Health ~= 0 then Tool:Activate() Tool:Activate() end
