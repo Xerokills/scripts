@@ -1,5 +1,5 @@
 local FFA = true
-local toggle = false
+local toggle = true
 
 wait(5)
 
