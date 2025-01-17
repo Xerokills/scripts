@@ -83,17 +83,17 @@ end
 --Settings
 local Tartarus = {
 	Active = true,
-	Radius = 12,
+	Radius = 8,
 	LoopFrequency = 0.15,
 	TeamWhitelist = true,
 	ShowNotifications = true,
 
 	Keybinds = {
 		Normal = {
-			[] = "Toggle",
+			[Enum.KeyCode.Z] = "Toggle",
 			[Enum.KeyCode.T] = "ToggleMode",
-			[Enum.KeyCode.E] = "IncreaseRadius",
-			[Enum.KeyCode.Q] = "DecreaseRadius",
+			[Enum.KeyCode.Q] = "IncreaseRadius",
+			[Enum.KeyCode.E] = "DecreaseRadius",
 			[Enum.KeyCode.X] = "ToggleTeamWhitelist",
 		},
 		CTRL = {
