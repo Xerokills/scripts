@@ -90,7 +90,7 @@ local Tartarus = {
 
 	Keybinds = {
 		Normal = {
-			[Enum.KeyCode.F] = "Toggle",
+			[] = "Toggle",
 			[Enum.KeyCode.T] = "ToggleMode",
 			[Enum.KeyCode.E] = "IncreaseRadius",
 			[Enum.KeyCode.Q] = "DecreaseRadius",
