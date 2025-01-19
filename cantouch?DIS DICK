@@ -1,0 +1,33 @@
+local players = game:GetService("Players")
+    local run = game:GetService("RunService")
+    local uis = game:GetService("UserInputService")
+
+    print("tank toggled")
+
+    local toggle = true
+
+    while run.Stepped:Wait() do
+        if toggle then
+            pcall(function()
+                for i, v in next, players.LocalPlayer.Character:GetChildren() do
+                    if players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+                        if v:IsA("Part") then
+                            v.CanTouch = false
+                        end
+                    else
+                        if v:IsA("Part") then
+                            v.CanTouch = true
+                        end
+                    end
+                end
+            end)
+        else
+            pcall(function()
+                for i, v in next, players.LocalPlayer.Character:GetChildren() do
+                    if v:IsA("Part") then
+                        v.CanTouch = true
+                    end
+                end
+            end)
+        end
+    end
